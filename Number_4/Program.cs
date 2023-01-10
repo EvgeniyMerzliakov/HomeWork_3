@@ -20,7 +20,6 @@ int zB = Convert.ToInt32(Console.ReadLine());
 
 
 
-double result = Math.Sqrt((xA - xB)*(xA - xB) + (yA - yB)*(yA - yB) + (zA - zB)*(zA - zB));
-
+double result = Math.Round(Math.Sqrt((xA - xB)*(xA - xB) + (yA - yB)*(yA - yB) + (zA - zB)*(zA - zB)), 2);
 
 Console.WriteLine(result);
