@@ -20,16 +20,17 @@ double Magic(int[] pointA, int[] pointB)
 {
     int D = 0;
     int sum = 0;
+    int N = pointA.Length;
     for (int i = 0; i < N; i++)
     {
         D = (pointA[i] - pointB[i]) * (pointA[i] - pointB[i]);
         sum = sum + D; 
     }
-    double result = Math.Sqrt(sum);
+    double result = Math.Round(Math.Sqrt(sum), 2);
     return result;
 }
 
-Magic(arrayA, arrayB);
+Console.WriteLine(Magic(arrayA, arrayB));
 
 
 // double D = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)); 
